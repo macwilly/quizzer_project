@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   
+    <!-- ====================== Question Attributes & Common elements ======================== -->
+    <xs:attributeGroup name="questionAttributes">
+        <xs:attribute name="quesNum" type="xs:integer" use="required"/>
+        <xs:attribute name="maxScore" type="xs:decimal" use="required"></xs:attribute>
+    </xs:attributeGroup>
+    
+    <xs:element name="score" type="xs:decimal" nillable="true"  default="0"/>
+    <!-- ===================================================================================== -->
+   
+    
+    <!-- ===================================================================================== -->
+    <!-- Choice restriction "alphabets only" -->
+    <xs:simpleType name="choiceItem">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- A MCQuestion type with text and atleast 2 options -->
+    <xs:complexType name="choices" mixed="true">
+        <xs:choice maxOccurs="unbounded" minOccurs="2">
+            <xs:element name="option">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="id" type="choiceItem" use="required"/>
+                </xs:complexType>
+                
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    
+    
+    <!-- Full Question Element Type -->
+    
+    <xs:complexType name="MCQ">
+                <xs:sequence>
+                    <xs:element name="ques" type="choices"  />
+                    <xs:element name="ans" type="choiceItem" nillable="true"/>
+                    <xs:element ref="score" ></xs:element>
+                </xs:sequence>
+                <xs:attributeGroup ref="questionAttributes"/>
+    </xs:complexType>
+    
+    
+    <!-- Restrictions - value entered in <ans> element must match attribute id of the options -->
+    <xs:element name="MCQ" type="MCQ">
+        <xs:key name="choiceId">
+            <xs:selector xpath="Quiz/MCQ/ques/option"></xs:selector>
+            <xs:field xpath="@id"></xs:field>
+        </xs:key>
+        <xs:keyref refer="choiceId" name="answer">
+            <xs:selector xpath="Quiz/MCQ/ans"></xs:selector>
+            <xs:field xpath="."></xs:field>
+        </xs:keyref>
+    </xs:element>
+    
+    <!-- ===================================================================================== -->
+    
+    <!-- ===============================Main Quiz Element===================================== -->
+    <xs:element name="Quiz">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="MCQ"></xs:element>
+                
+                <!-- Here we can add new question types -->
+            </xs:choice>
+            
+        </xs:complexType>
+     <!-- Any question element with any name must have unique quesNum [There is no auto increment in XML] -->        
+        <xs:unique name="quesNumbers">
+            <xs:selector xpath="*"></xs:selector>
+            <xs:field xpath="@quesNum"></xs:field>
+        </xs:unique>
+        
+    </xs:element>
+    
+    
+    
+    
+    
+    
+    
+</xs:schema>
