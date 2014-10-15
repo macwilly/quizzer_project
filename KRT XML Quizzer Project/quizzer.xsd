@@ -58,14 +58,14 @@
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
-    <xs:attribute name="acronym" use="required">
+    <xs:attribute name="acronym" use="optional">
       <xs:annotation>
         <xs:documentation> This attribute will simply describe the Course Acronym. Eg: KRT
         </xs:documentation>
       </xs:annotation>
       <xs:simpleType>
         <xs:restriction base="xs:token">
-          <xs:pattern value="[A-Z]{3}|[A-Z]{2}"/>
+          <xs:pattern value="[A-Z]{4}|[A-Z]{3}|[A-Z]{2}|[0-9]{1}"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
