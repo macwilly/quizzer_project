@@ -113,6 +113,7 @@
         <xs:annotation>
             <xs:documentation> This is the attribute list for exam element. </xs:documentation>
         </xs:annotation>
+        <!-- the type id requires 9 digits to be valid  -->
         <xs:attribute name="prof_UID" use="required" type="ID"/>
         <xs:attribute name="stud_UID" use="required" type="ID"/>
         <xs:attribute name="exam_id" type="xs:string" use="required"/>
