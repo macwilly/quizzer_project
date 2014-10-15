@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file:/C:/Users/priyesh/Desktop/KRT%20XML%20Quizzer%20Project/quizzer.xsd">
- 
+    <course id="ISTE-610-01" acronym="KRT">
+        <exam prof_UID="123456789" exam_id="PE01" exam_title="Practice Exercise 1" fromTime="15:30:00" toTime="16:45:00">
+            <qtype>
+                <instr>
+                    <list>
+                        <item number="1">This is an Open book Test</item>
+                        <item number="2">Do not copy from one another</item>
+                    </list>
+                </instr>
+                <question number="1" type="brief" points="1.0">
+                    <para>What is a Stylesheet?</para>
+                    <answer></answer>
+                </question>
+                <question number="2" type="MCQs">
+                    <para>What is the size of an oracle data block?</para>
+                    <list>
+                        <item number="1">4k</item>
+                        <item number="2">8k</item>
+                        <item number="3">16k</item>
+                        <item number="4">same as the OS block size</item>
+                    </list>
+                    <answer></answer>
+                </question>
+                <question number="3" type="Fill-in-the-blanks">
+                    <para>The acronym for DTD is _______.</para>
+                    <answer></answer>
+                </question>
+                <question number="4" type="Coding">
+                    <para>write a small xml code to display the use of CDATA</para>
+                    <answer></answer>
+                </question>
+            </qtype>
+        </exam>
+        <exam prof_UID="987654321" exam_id="MT1" exam_title="Midterm 1">
+            <qtype>
+                <question number="1" type="Fill-in-the-blanks" points="2.0" level="hard">
+                    <para>
+                        The acronym for RAC in Oracle is ______.</para>
+                    <answer></answer>
+                </question>
+                <question number="2" type="brief" level="medium" points="4.0">
+                    <para>Explain the difference betwwen pfile and spfile.</para>
+                    <answer></answer>
+                </question>
+            </qtype>
+        </exam>
+    </course> 
 </Quizzer>
