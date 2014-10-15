@@ -65,27 +65,15 @@
       </xs:annotation>
       <xs:simpleType>
         <xs:restriction base="xs:token">
-          <xs:pattern value="[A-Z]{4}|[A-Z]{3}|[A-Z]{2}|[0-9]{1}"/>
+          <xs:pattern value="[A-Z]{4}|[A-Z]{3}|[A-Z]{2}[0-9]{1}"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
     <xs:attribute name="CourseName" use="optional">
       <xs:annotation>
-        <xs:documentation> This attribute will display the Course name. Eg: Knowledge Representation
+        <xs:documentation> This attribute will allow prof to enter their own course name 
           Technologies </xs:documentation>
       </xs:annotation>
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-          <xs:enumeration value="Knowledge Representation Technologies"/>
-          <xs:enumeration value="Knowledge Driven Discoveries"/>
-          <xs:enumeration value="Intorduction to GIS"/>
-          <xs:enumeration value="Knowledge Processing Technologies"/>
-          <xs:enumeration value="Database Management and Access"/>
-          <xs:enumeration value="Data Warehousing"/>
-          <xs:enumeration value="Visual Analytics"/>
-          <xs:enumeration value="Analytical Thinking"/>
-        </xs:restriction>
-      </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
   
