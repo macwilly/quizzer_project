@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/C:/Users/Mackenzie%20Willard/Documents/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
+    xsi:noNamespaceSchemaLocation="file:/F:/Dox/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
     <course id="DRWO-101-01">
         <exam prof_UID="123456789" stud_UID="000000001" exam_id="01">
             <MCQ number="1" >
@@ -11,12 +11,18 @@
                     <option id="d">12</option>
                 </ques>
                 <ans>c</ans>
+                <prof-answer></prof-answer>
+                <prof-score>0.0</prof-score>
+                
             </MCQ>
             <Desc_question number="2">
                 <ques>In what ways does a Time Lord differ from a human? </ques>
                 <ans>
                     <para>Your answer goes here</para>
                 </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+                
             </Desc_question>
             <MCQ number="3">
                 <ques> What does TARDIS stand for?
@@ -26,12 +32,17 @@
                     <option id="d">Totally Awesome Random Devise in Space</option>
                 </ques>
                 <ans>a</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+               
             </MCQ>
             <Desc_question number="4">
                 <ques>Who is the Doctors greatest foe? </ques>
                 <ans>
                     <para>Your answer here. </para>
                 </ans>
+                <prof-answer></prof-answer>
+                <prof-score>0</prof-score>
             </Desc_question>
             <MCQ number="5">
                 <ques> What year was Doctor Who started in?
@@ -41,6 +52,8 @@
                     <option id="d">1989</option>
                 </ques>
                 <ans>a</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </MCQ>
             <Match number="6">
                 <ques> Match the foe to the picture.
@@ -62,6 +75,8 @@
                 <ans>
                     <para>Your answer here.</para>
                 </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </Desc_question>
             <MCQ number="8">
                 <ques>In the start of Season 8 of the new Doctor Who how many Companions has the Doctor had?
@@ -71,12 +86,16 @@
                     <option id="d">54</option>
                 </ques>
                 <ans>c</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </MCQ>
             <Desc_question number="9">
                 <ques>Who does Captain Jack Harkness become and how?</ques>
                 <ans>
                     <para> Your answer here.</para>
                 </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </Desc_question>
             <MCQ number="10">
                 <ques>
@@ -87,7 +106,9 @@
                     <option id="e"> All of the above</option>
                 </ques>
                 <ans>e</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </MCQ>
-        </exam>
+            
     </course>
 </Quizzer>
