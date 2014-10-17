@@ -69,6 +69,8 @@
                     <option id="e">../media/weeping_angles.jpg</option>
                 </ques>
                 <matcher></matcher>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </Match>
             <Desc_question number="7">
                 <ques>Who does the Doctor normally travel with?</ques>
@@ -109,6 +111,6 @@
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
-            
+        </exam>
     </course>
 </Quizzer>
