@@ -4,10 +4,12 @@
     <course id="TBBT-101-01">
         <exam prof_UID="808738475" stud_UID="125789455" exam_id="01">
             <Desc_question number="01">
-                <ques>Describe the varrious character from 'The Big Bang Theory'.</ques>
+                <ques>Describe the various character from 'The Big Bang Theory'.</ques>
                 <ans>
                     <para>Enter your answer here</para>
                 </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </Desc_question>
             <MCQ number="02">
                 <ques>What is Sheldon Cooper's middle name?
@@ -17,6 +19,8 @@
                     <option id="d">Bazinga</option>
                 </ques>
                 <ans>a</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </MCQ>
             <Match number="03">
                 <ques> Match the soulmates.
@@ -30,8 +34,19 @@
                     <option id="d">../media/amy.jpg</option>
                 </ques>
                 <matcher></matcher>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </Match>
-            <MCQ number="04">
+            <TF number="04">
+                <ques>Howard Woluwitz is NOT a jew.
+                    <option id="a">True</option>
+                    <option id="b">False</option>
+                </ques>
+                <ans>b</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </TF>
+            <MCQ number="05">
                 <ques>Which character does NOT have a PhD?
                     <option id="a">Sheldon Cooper</option>
                     <option id="b">Leonard Heoffstadder</option>
@@ -39,8 +54,60 @@
                     <option id="d">Howard Woluwitz</option>
                 </ques>
                 <ans>d</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
             </MCQ>
-            
+            <Desc_question number="06">
+                <ques>Describe your reaction to Sheldon's Roommate Agreement.</ques>
+                <ans>
+                    <para></para>
+                </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Desc_question>
+            <Match number="07">
+                <ques>Match the following:
+                    <item number="1">Howard</item>
+                    <item number="2">Bernadette</item>
+                    <item number="3">Sheldon</item>
+                    <item number="4">Penny</item>
+                    <option id="a">The Cheese Cake Factory</option>
+                    <option id="b">Microbiology</option>
+                    <option id="c">Engineering</option>
+                    <option id="d">Theoretical Physics</option>
+                </ques>
+                <matcher></matcher>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Match>
+            <TF number="08">
+                <ques>Pennny's Character is orignally from Nebraska.
+                    <option id="a">True</option>
+                    <option id="b">False</option>
+                </ques>
+                <ans>a</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </TF>
+            <Desc_question number="09">
+                <ques>why the names 'Sheldon' and 'Leonard' used  specifically in the show by chuck lorre and bill prady?</ques>
+                <ans>
+                    <para></para>
+                </ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Desc_question>
+            <MCQ number="10">
+                <ques>Bernadette's full name before marrige was
+                    <option id="a">Bernadette Roulette</option>
+                    <option id="b">Bernadette Lee Cooper</option>
+                    <option id="c">Bernadette Maryann Rostenkowski</option>
+                    <option id="d">Bernadette Woluwitz</option>
+                </ques>
+                <ans>c</ans>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
         </exam>
     </course>
 </Quizzer>
