@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/priyesh/Documents/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
+    <course id="TBBT-101-01">
+        <exam prof_UID="808738475" stud_UID="125789455" exam_id="01">
+            <Desc_question number="01">
+                <ques>Describe the varrious character from 'The Big Bang Theory'.</ques>
+                <ans>
+                    <para>Enter your answer here</para>
+                </ans>
+            </Desc_question>
+            <MCQ number="02">
+                <ques>What is Sheldon Cooper's middle name?
+                    <option id="a">Lee</option>
+                    <option id="b">Spock</option>
+                    <option id="c">Zazzy</option>
+                    <option id="d">Bazinga</option>
+                </ques>
+                <ans>a</ans>
+            </MCQ>
+            <Match number="03">
+                <ques> Match the soulmates.
+                    <item number="1">Sheldon</item>
+                    <item number="2">Leonard</item>
+                    <item number="3">Howard</item>
+                    <item number="4">Rajesh</item>
+                    <option id="a">../media/bernadette.jpg</option>
+                    <option id="b">../media/stuart.jpg</option>
+                    <option id="c">../media/penny.jpg</option>
+                    <option id="d">../media/amy.jpg</option>
+                </ques>
+                <matcher></matcher>
+            </Match>
+            <MCQ number="04">
+                <ques>Which character does NOT have a PhD?
+                    <option id="a">Sheldon Cooper</option>
+                    <option id="b">Leonard Heoffstadder</option>
+                    <option id="c">Rajesh Kuthrapalli</option>
+                    <option id="d">Howard Woluwitz</option>
+                </ques>
+                <ans>d</ans>
+            </MCQ>
+            
+        </exam>
+    </course>
+</Quizzer>
