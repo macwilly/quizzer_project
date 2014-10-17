@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <name>Pen</name>
+    <Question id="1">
+    
+        <Q>how are you</Q>
+          <answer>not fine</answer>
+        <grade>5</grade>
+        <youget>2.5</youget>
+    </Question>
+    
+    <Question id="2">
+        <Q>what is your gender
+        a.male
+        b female
+        </Q>
+        <answer>b</answer>
+        <grade>5</grade>
+        <youget></youget>
+</Question>
+        <Question id="3">
+            <Q>do you like java
+                a.yes
+                b.sure
+                c.not like it
+            </Q>
+            <answer>c</answer>
+            <grade>7</grade>
+            <youget></youget>
+        </Question>
+    </quiz>

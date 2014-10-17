@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <Question id="1">
+      <answer>non-objective-question</answer>
+  </Question>
+    
+    <Question id="2">
+        <answer>b</answer>
+    </Question>
+    
+    <Question id="3">
+        <answer>b</answer>
+    </Question>
+</quiz>
