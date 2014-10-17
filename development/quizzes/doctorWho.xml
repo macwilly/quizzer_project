@@ -3,7 +3,7 @@
     xsi:noNamespaceSchemaLocation="file:/F:/Dox/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
     <course id="DRWO-101-01">
         <exam prof_UID="123456789" stud_UID="000000001" exam_id="01">
-            <MCQ number="1" >
+            <MCQ number="1">
                 <ques>In the start of Season 8 of the new Doctor Who how many Doctors has there been? <!-- should we have a specific element for this? -->
                     <option id="a">5</option>
                     <option id="b">15</option>
@@ -11,6 +11,7 @@
                     <option id="d">12</option>
                 </ques>
                 <ans>c</ans>
+                
                 <prof-answer></prof-answer>
                 <prof-score>0.0</prof-score>
                 
@@ -55,7 +56,7 @@
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
-            <Match number="6">
+            <Match number="6" points="3.0">
                 <ques> Match the foe to the picture.
                     <item number="1">Daleks</item>
                     <item number="2">Weeping Angles</item>
@@ -68,7 +69,9 @@
                     <option id="d">../media/the_silence.jpg</option>
                     <option id="e">../media/weeping_angles.jpg</option>
                 </ques>
-                <matcher></matcher>
+                <matcher>
+                    1b 2c 
+                </matcher>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
