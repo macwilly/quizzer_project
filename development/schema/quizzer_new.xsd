@@ -100,6 +100,7 @@
                     <xs:element ref="MCQ"/>
                     <xs:element ref="Desc_question"/>
                     <xs:element ref="Match"/>
+                    <xs:element name="TF" type="TF"></xs:element>
                 </xs:choice>
             </xs:sequence>
             <xs:attributeGroup ref="AttrGroup_exam"/>
@@ -336,8 +337,8 @@
         <xs:documentation>The group of elements which are common for all the questions</xs:documentation>
     </xs:annotation>
     <xs:sequence>
-    <xs:element name="prof-answer" minOccurs="0" type="xs:string"/>
-    <xs:element name="prof-score" minOccurs="0" type="xs:float"/>
+    <xs:element name="prof-answer" minOccurs="1" type="xs:string"/>
+    <xs:element name="prof-score" minOccurs="1" type="xs:float" default="0"/>
     </xs:sequence>
 </xs:group>
 
@@ -361,8 +362,7 @@
             
             <xs:element name="ans" minOccurs="1" type="descr_ans"/>
             <!--<xs:element ref="resources" minOccurs="0"/>-->
-            <xs:element name="prof-answer" minOccurs="0" type="xs:string"/>
-            <xs:element name="prof-score" minOccurs="0" type="xs:float"/>
+            <xs:group ref="questionGroup"></xs:group>
         </xs:sequence>
         <xs:attributeGroup ref="questionAttributes"/>
     </xs:complexType>
