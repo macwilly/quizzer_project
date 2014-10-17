@@ -11,16 +11,16 @@
                     <option id="d">12</option>
                 </ques>
                 <ans>c</ans>
-                
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score>0.0</prof-score>
-                
-            </MCQ>
+             </MCQ>
             <Desc_question number="2">
                 <ques>In what ways does a Time Lord differ from a human? </ques>
                 <ans>
                     <para>Your answer goes here</para>
                 </ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
                 
@@ -33,6 +33,7 @@
                     <option id="d">Totally Awesome Random Devise in Space</option>
                 </ques>
                 <ans>a</ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
                
@@ -42,6 +43,7 @@
                 <ans>
                     <para>Your answer here. </para>
                 </ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score>0</prof-score>
             </Desc_question>
@@ -53,10 +55,11 @@
                     <option id="d">1989</option>
                 </ques>
                 <ans>a</ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
-            <Match number="6" points="3.0">
+            <Match number="6">
                 <ques> Match the foe to the picture.
                     <item number="1">Daleks</item>
                     <item number="2">Weeping Angles</item>
@@ -70,8 +73,9 @@
                     <option id="e">../media/weeping_angles.jpg</option>
                 </ques>
                 <matcher>
-                    1b 2c 
+                    <item number="1">b</item>
                 </matcher>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
@@ -80,6 +84,7 @@
                 <ans>
                     <para>Your answer here.</para>
                 </ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -91,6 +96,7 @@
                     <option id="d">54</option>
                 </ques>
                 <ans>c</ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -99,6 +105,7 @@
                 <ans>
                     <para> Your answer here.</para>
                 </ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -111,6 +118,7 @@
                     <option id="e"> All of the above</option>
                 </ques>
                 <ans>e</ans>
+                <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>

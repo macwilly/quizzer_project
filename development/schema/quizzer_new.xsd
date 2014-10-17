@@ -100,7 +100,8 @@
                     <xs:element ref="MCQ"/>
                     <xs:element ref="Desc_question"/>
                     <xs:element ref="Match"/>
-                    <xs:element name="TF" type="TF"></xs:element>
+                    <xs:element name="TF" type="TF"/>
+                    <xs:element name="fill_in_the_blank" type="desc"></xs:element>
                 </xs:choice>
             </xs:sequence>
             <xs:attributeGroup ref="AttrGroup_exam"/>
@@ -231,8 +232,10 @@
     <!-- Choice restriction "alphabets only" -->
     <xs:simpleType name="choiceItem">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[a-z]" />
+            <xs:pattern value="[a-z]|" />
+            
         </xs:restriction>
+        
     </xs:simpleType>
     
     
@@ -270,7 +273,7 @@
     <xs:complexType name="MCQ">
         <xs:sequence>
             <xs:element name="ques" type="choices"  />
-            <xs:element name="ans" type="choiceItem" nillable="true"/>
+            <xs:element name="ans" type="choiceItem" nillable="true" minOccurs="0"/>
             <xs:group ref="questionGroup"></xs:group>
         </xs:sequence>
         <xs:attributeGroup ref="questionAttributes"/>
@@ -330,6 +333,7 @@
             <xs:selector xpath="ans"></xs:selector>
             <xs:field xpath="."></xs:field>
         </xs:keyref>
+        
     </xs:element>
 
 <xs:group name="questionGroup">
