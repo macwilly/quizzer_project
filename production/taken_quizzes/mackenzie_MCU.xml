@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema/quizzer_new.xsd">
+    <course id="MARV-101-01">
+        <exam prof_UID="830006498" stud_UID="542366587" exam_id="MCU">
+            <fill_in_the_blank number="1">
+                <ques>Expand J.A.R.V.I.S</ques>
+                <ans>
+                    <para>Just A Rather Very Intelligent System</para>
+                </ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </fill_in_the_blank>
+            
+            <MCQ number="2">
+                <ques>
+                    Which of the following characters is not yet seen in a Marvel movie?
+                    <option id="a">Spiderman</option>
+                    <option id="b">Quicksilver</option>
+                    <option id="c">Cable</option>
+                    <option id="d">Deadpool</option>
+                </ques>
+                <ans>c</ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            
+            <MCQ number="3">
+                <ques>
+                    Which of the following characters are not presently owned by Marvel Studios?
+                    <option id="a">Iron-Man</option>
+                    <option id="b">Quicksilver</option>
+                    <option id="c">Deadpool</option>
+                    <option id="d">Doctor Strange</option>
+                </ques>
+                <ans>c</ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <MCQ number="4">
+                <ques>
+                    In which movie was "The Avengers" referenced first?
+                    <option id="a">Spiderman 2</option>
+                    <option id="b">Iron-Man</option>
+                    <option id="c">Incredible Hulk</option>
+                    <option id="d">Iron-Man 2</option>
+                    <option id="e">Captain America</option>
+                </ques>
+                <ans>b</ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <TF number="5">
+                <ques>
+                    Spiderman was the first Marvel movie.
+                    <option id="t">True</option>
+                    <option id="f">False</option>
+                </ques>
+                <ans>f</ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </TF>
+            <Match number="6">
+                <ques>
+                    Match the characters to the actors who played them.
+                    <item number="1">Iron-Man</item>
+                    <item number="2">Human-torch</item>
+                    <item number="3">Black Widow</item>
+                    <item number="4">Spiderman</item>
+                    <option id="a">Scarlett Johansson</option>
+                    <option id="b">Robert Downey Jr</option>
+                    <option id="c">Andrew Garfield</option>
+                    <option id="d">Chris Evans</option>
+                </ques>
+                <ans>1b 2d 3a 4c</ans>
+                <max-score>4</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Match>
+            <Match number="7">
+                <ques>
+                    Match the alter-egos
+                    <item number="1">Falcon</item>
+                    <item number="2">Winter-Soldier</item>
+                    <item number="3">Quicksilver</item>
+                    <item number="4">Scarlet Witch</item>
+                    <item number="5">Black Widow</item>
+                    <option id="a">Natasha Romanoff</option>
+                    <option id="b">Pietra Maximoff</option>
+                    <option id="c">Wanda Maximoff</option>
+                    <option id="d">Bucky Barnes</option>
+                    <option id="e">Sam Wilson</option>
+                </ques>
+                <ans>1e 2d 3b 4c 5a</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Match>
+        </exam>
+    </course>
+</Quizzer>
