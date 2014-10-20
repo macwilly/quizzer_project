@@ -434,7 +434,9 @@
       </xs:complexContent>
   </xs:complexType>
     <xs:simpleType name="matching-answers-type">
-        <xs:union memberTypes="choiceItem itemType"></xs:union>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][a-z]"></xs:pattern>
+        </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="matching-answers">
         <xs:list itemType="matching-answers-type"/>
