@@ -11,18 +11,18 @@
                     <option id="d">12</option>
                 </ques>
                 <ans>c</ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score>0.0</prof-score>
              </MCQ>
             <Desc_question number="2">
                 <ques>In what ways does a Time Lord differ from a human? </ques>
                 <ans>
-                    <para>Your answer goes here</para>
+                    <para>I dont know</para>
                 </ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
-                <prof-score></prof-score>
+                <prof-score>4.0</prof-score>
                 
             </Desc_question>
             <MCQ number="3">
@@ -33,7 +33,7 @@
                     <option id="d">Totally Awesome Random Devise in Space</option>
                 </ques>
                 <ans>a</ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
                
@@ -41,11 +41,11 @@
             <Desc_question number="4">
                 <ques>Who is the Doctors greatest foe? </ques>
                 <ans>
-                    <para>Your answer here. </para>
+                    <para>cute robot</para>
                 </ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
-                <prof-score>0</prof-score>
+                <prof-score>10.0</prof-score>
             </Desc_question>
             <MCQ number="5">
                 <ques> What year was Doctor Who started in?
@@ -54,8 +54,8 @@
                     <option id="c">1996</option>
                     <option id="d">1989</option>
                 </ques>
-                <ans>a</ans>
-                <max-score></max-score>
+                <ans>b</ans>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -74,17 +74,21 @@
                 </ques>
                 <matcher>
                     <item number="1">b</item>
+                    <item number="2">a</item>
+                    <item number="3">c</item>
+                    <item number="4">d</item>
+                    <item number="5">e</item>
                 </matcher>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
             <Desc_question number="7">
                 <ques>Who does the Doctor normally travel with?</ques>
                 <ans>
-                    <para>Your answer here.</para>
+                    <para>blond pretty girl</para>
                 </ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -96,16 +100,16 @@
                     <option id="d">54</option>
                 </ques>
                 <ans>c</ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
             <Desc_question number="9">
                 <ques>Who does Captain Jack Harkness become and how?</ques>
                 <ans>
-                    <para> Your answer here.</para>
+                    <para> I dont know</para>
                 </ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -118,7 +122,7 @@
                     <option id="e"> All of the above</option>
                 </ques>
                 <ans>e</ans>
-                <max-score></max-score>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
