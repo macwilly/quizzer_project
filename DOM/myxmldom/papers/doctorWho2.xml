@@ -2,7 +2,7 @@
 <Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file:/F:/Dox/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
     <course id="DRWO-101-01">
-        <exam prof_UID="123456789" stud_UID="000000001" exam_id="01">
+        <exam prof_UID="123456789" stud_UID="000000002" exam_id="01">
             <MCQ number="1">
                 <ques>In the start of Season 8 of the new Doctor Who how many Doctors has there been? <!-- should we have a specific element for this? -->
                     <option id="a">5</option>
@@ -10,7 +10,7 @@
                     <option id="c">13</option>
                     <option id="d">12</option>
                 </ques>
-                <ans>a</ans>
+                <ans>c</ans>
                 <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score>0.0</prof-score>
@@ -32,7 +32,7 @@
                     <option id="c">Time and Running Down Initial Space </option>
                     <option id="d">Totally Awesome Random Devise in Space</option>
                 </ques>
-                <ans>c</ans>
+                <ans>a</ans>
                 <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
