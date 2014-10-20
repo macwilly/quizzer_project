@@ -414,10 +414,7 @@
             <xs:field xpath="."></xs:field>
         </xs:keyref>-->
       
-        <xs:keyref refer="matching_items" name="matching_itemsRef">
-            <xs:selector xpath="matcher/item"></xs:selector>
-            <xs:field xpath="@number"></xs:field>
-        </xs:keyref>
+        
     </xs:element>
   <xs:complexType name="matching_questions" mixed="true">
       <xs:complexContent>

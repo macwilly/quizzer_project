@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema/quizzer_new.xsd">
+    <course id="MARV-101-01">
+        <exam prof_UID="830006498" stud_UID="542366587" exam_id="MCU">
+            <fill_in_the_blank number="1">
+                <ques>Expand J.A.R.V.I.S</ques>
+                <ans>
+                    <para>Just Another Rather Very Intelligent System</para>
+                </ans>
+                <max-score>1</max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </fill_in_the_blank>
+            
+        </exam>
+    </course>
+</Quizzer>
