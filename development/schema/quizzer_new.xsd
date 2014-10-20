@@ -42,7 +42,8 @@
         </xs:annotation>
         <xs:attribute name="id" use="required">
             <xs:annotation>
-                <xs:documentation> The Course ID will uniquely identify the course and will have a specific
+                <xs:documentation> 
+                    The Course ID will uniquely identify the course and will have a specific
                     pattern that will include Department-courseNumber-Section. Eg: ISTE-610-01
                 </xs:documentation>
             </xs:annotation>
@@ -65,8 +66,10 @@
         </xs:attribute>
         <xs:attribute name="CourseName" use="optional">
             <xs:annotation>
-                <xs:documentation> This attribute will allow prof to enter their own course name 
-                    Technologies </xs:documentation>
+                <xs:documentation>
+                    This attribute will allow prof to enter their own course name 
+                    Technologies
+                </xs:documentation>
             </xs:annotation>
         </xs:attribute>
     </xs:attributeGroup>
@@ -398,21 +401,14 @@
             <xs:sequence>
                 <xs:element name="ques" type="matching_questions"/>
             
-                <xs:element name="matcher" type="matching_answers"/>
+                <xs:element name="ans" type="matching-answers"/>
             
                 <xs:group ref="questionGroup"></xs:group>
             </xs:sequence>
             <xs:attributeGroup ref="questionAttributes"/>
             
         </xs:complexType>
-        <xs:key name="matching_items">
-            <xs:selector xpath="ques/item"></xs:selector>
-            <xs:field xpath="@number"></xs:field>
-        </xs:key>
-        <xs:key name="matching_choices">
-            <xs:selector xpath="ques/option"></xs:selector>
-            <xs:field xpath="@id"></xs:field>
-        </xs:key>
+        
       <!--<xs:keyref refer="matching_choices" name="matching_choicesRef">
             <xs:selector xpath="matcher/item"></xs:selector>
             <xs:field xpath="."></xs:field>
@@ -440,4 +436,10 @@
           </xs:extension>
       </xs:complexContent>
   </xs:complexType>
+    <xs:simpleType name="matching-answers-type">
+        <xs:union memberTypes="choiceItem itemType"></xs:union>
+    </xs:simpleType>
+    <xs:simpleType name="matching-answers">
+        <xs:list itemType="matching-answers-type"/>
+    </xs:simpleType>
 </xs:schema>
