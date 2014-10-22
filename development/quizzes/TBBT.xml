@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/C:/Users/priyesh/Documents/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
+    xsi:noNamespaceSchemaLocation="../schema/quizzer_new.xsd">
     <course id="TBBT-101-01">
         <exam prof_UID="808738475" stud_UID="125789455" exam_id="01">
             <Desc_question number="01">
@@ -8,6 +8,7 @@
                 <ans>
                     <para>Enter your answer here</para>
                 </ans>
+                <max-score>10</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -17,8 +18,10 @@
                     <option id="b">Spock</option>
                     <option id="c">Zazzy</option>
                     <option id="d">Bazinga</option>
+                    <option id=""></option>
                 </ques>
-                <ans>a</ans>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -33,7 +36,8 @@
                     <option id="c">../media/penny.jpg</option>
                     <option id="d">../media/amy.jpg</option>
                 </ques>
-                <matcher></matcher>
+                <ans></ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
@@ -41,8 +45,10 @@
                 <ques>Howard Woluwitz is NOT a jew.
                     <option id="a">True</option>
                     <option id="b">False</option>
+                    <option id=""></option>
                 </ques>
-                <ans>b</ans>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </TF>
@@ -52,8 +58,10 @@
                     <option id="b">Leonard Heoffstadder</option>
                     <option id="c">Rajesh Kuthrapalli</option>
                     <option id="d">Howard Woluwitz</option>
+                    <option id=""></option>
                 </ques>
-                <ans>d</ans>
+                <ans></ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -62,6 +70,7 @@
                 <ans>
                     <para></para>
                 </ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -76,7 +85,8 @@
                     <option id="c">Engineering</option>
                     <option id="d">Theoretical Physics</option>
                 </ques>
-                <matcher></matcher>
+                <ans></ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
@@ -84,8 +94,10 @@
                 <ques>Pennny's Character is orignally from Nebraska.
                     <option id="a">True</option>
                     <option id="b">False</option>
+                    <option id=""></option>
                 </ques>
-                <ans>a</ans>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </TF>
@@ -94,6 +106,7 @@
                 <ans>
                     <para></para>
                 </ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -103,8 +116,10 @@
                     <option id="b">Bernadette Lee Cooper</option>
                     <option id="c">Bernadette Maryann Rostenkowski</option>
                     <option id="d">Bernadette Woluwitz</option>
+                    <option id=""></option>
                 </ques>
-                <ans>c</ans>
+                <ans></ans>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>

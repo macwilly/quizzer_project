@@ -27,8 +27,9 @@
                     <option id="b">Quicksilver</option>
                     <option id="c">Cable</option>
                     <option id="d">Deadpool</option>
+                    <option id=""></option>
                 </ques>
-                <ans>c</ans>
+                <ans/>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -41,8 +42,9 @@
                     <option id="b">Quicksilver</option>
                     <option id="c">Deadpool</option>
                     <option id="d">Doctor Strange</option>
+                    <option id=""></option>
                 </ques>
-                <ans>c</ans>
+                <ans/>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -55,8 +57,9 @@
                     <option id="c">Incredible Hulk</option>
                     <option id="d">Iron-Man 2</option>
                     <option id="e">Captain America</option>
+                    <option id=""></option>
                 </ques>
-                <ans>b</ans>
+                <ans/>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -66,8 +69,9 @@
                     Spiderman was the first Marvel movie.
                     <option id="t">True</option>
                     <option id="f">False</option>
+                    <option id=""></option>
                 </ques>
-                <ans>f</ans>
+                <ans></ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -84,7 +88,7 @@
                     <option id="c">Andrew Garfield</option>
                     <option id="d">Chris Evans</option>
                 </ques>
-                <ans>1b 2d 3a 4c</ans>
+                <ans></ans>
                 <max-score>4</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -103,8 +107,8 @@
                     <option id="d">Bucky Barnes</option>
                     <option id="e">Sam Wilson</option>
                 </ques>
-                <ans>1e 2d 3b 4c 5a</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>5</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Match>
