@@ -261,7 +261,7 @@
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="tfChoices" mixed="true">
-        <xs:choice maxOccurs="2" minOccurs="2">
+        <xs:choice maxOccurs="3" minOccurs="3">
             <xs:element name="option">
                 <xs:complexType mixed="true">
                     <xs:attribute name="id" type="choiceItem" use="required"/>
