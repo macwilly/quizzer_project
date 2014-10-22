@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Quizzer">
+        <xs:annotation>
+            <xs:documentation> Quizzer is the root element and can contain any number of courses as child
+                elements. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="course" type="course">
+                    <xs:annotation>
+                        <xs:documentation> course element is referred here. </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="course">
+        <xs:annotation>
+            <xs:documentation> A course can have any number of exam elements under it.
+            </xs:documentation>
+        </xs:annotation>
+        
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="exam">
+                    <xs:annotation>
+                        <xs:documentation> exam element is referred here. </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attributeGroup ref="AttrGroup_course">
+                <xs:annotation>
+                    <xs:documentation> Attribute list for course element is referred here. </xs:documentation>
+                </xs:annotation>
+            </xs:attributeGroup>
+        
+    </xs:complexType>
+    <xs:attributeGroup name="AttrGroup_course">
+        <xs:annotation>
+            <xs:documentation> This is the attribute list for course element. </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="id" use="required">
+            <xs:annotation>
+                <xs:documentation> 
+                    The Course ID will uniquely identify the course and will have a specific
+                    pattern that will include Department-courseNumber-Section. Eg: ISTE-610-01
+                </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:token">
+                    <xs:pattern value="[A-Z]{4}-[0-9]{3}-[0-9]{2}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="acronym" use="optional">
+            <xs:annotation>
+                <xs:documentation> This attribute will simply describe the Course Acronym. Eg: KRT, KT, WEB1 etc.
+                </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+                <xs:restriction base="xs:token">
+                    <xs:pattern value="([A-Z]){2,3}([0-9])? "/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="CourseName" use="optional">
+            <xs:annotation>
+                <xs:documentation>
+                    This attribute will allow prof to enter their own course name 
+                    Technologies
+                </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    
+    
+    <xs:simpleType name="ID">
+        <xs:annotation>
+            <xs:documentation>SimpleType used to define IDs of professor and students</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    
+    
+    <xs:element name="exam">
+        <xs:annotation>
+            <xs:documentation> Each exam can have an instruction set and Questions </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="instr" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation> instr element provides information about test and is Correctional.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element ref="MCQ"/>
+                    <xs:element ref="Desc_question"/>
+                    <xs:element ref="Match"/>
+                    <xs:element name="TF" type="TF"/>
+                    <xs:element name="fill_in_the_blank" type="desc"></xs:element>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attributeGroup ref="AttrGroup_exam"/>
+        </xs:complexType>
+        <xs:unique name="quesNumbers">
+            <xs:selector xpath="*"></xs:selector>
+            <xs:field xpath="@number"></xs:field>
+        </xs:unique>
+    </xs:element>
+    <xs:attributeGroup name="AttrGroup_exam">
+        <xs:annotation>
+            <xs:documentation> This is the attribute list for exam element. </xs:documentation>
+        </xs:annotation>
+        <!-- the type id requires 9 digits to be valid  -->
+        <xs:attribute name="prof_UID" use="required" type="ID"/>
+        <xs:attribute name="stud_UID" use="required" type="ID"/>
+        <xs:attribute name="exam_id" type="xs:string" use="required"/>
+        <xs:attribute name="exam_title" type="xs:string" use="optional"/>
+        <xs:attribute name="time" type="xs:time"/>
+    </xs:attributeGroup>
+
+
+    <xs:element name="instr" >
+        <xs:annotation>
+            <xs:documentation> instr element is referred in exam element. </xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:group ref="shared" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:group name="shared">
+        <xs:choice>
+            <xs:element ref="list"/>
+            <xs:element ref="img"/>
+            <xs:element ref="hyperlink"/>
+        </xs:choice>
+    </xs:group>
+
+    <xs:element name="list">
+        <xs:annotation>
+            <xs:documentation>
+                List element displays data as bullets, numbers or plain
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="item" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="AttrGroup_list"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attributeGroup name="AttrGroup_list">
+        <xs:annotation>
+            <xs:documentation>
+                This is the attribute group for list element.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="type" default="bullets">
+            <xs:simpleType>
+                <xs:restriction base="xs:token">
+                    <xs:enumeration value="bullets"/>
+                    <xs:enumeration value="numbers"/>
+                    <xs:enumeration value="plain"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    
+    <!--   item   -->
+    <xs:element name="item">
+        <xs:annotation>
+            <xs:documentation>
+                This is the Item element where the item is identified by the number attribute
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:attributeGroup ref="AttrGroup_item"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:attributeGroup name="AttrGroup_item">
+        <xs:annotation>
+            <xs:documentation>
+                Attribute group for item element
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="number" type="itemType" use="required"/>
+    </xs:attributeGroup>
+    <xs:simpleType name="itemType">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+    <!-- IMG -->
+    <xs:element name="img">
+        <xs:annotation>
+            <xs:documentation>
+                This is the Image element.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:attributeGroup ref="AttrGroup_img"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:attributeGroup name="AttrGroup_img">
+        <xs:annotation>
+            <xs:documentation>
+                Attribute group for Image element.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="name" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="(.)+.[jpeg|jpg|bmp|png|gif]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="path" type="xs:string"/>
+    </xs:attributeGroup>
+
+
+
+    <xs:element name="hyperlink" type="xs:string"/>
+    
+    <xs:annotation>
+        <xs:documentation>Choice restriction "alphabets only"</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="choiceItem">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]|" />
+            
+        </xs:restriction>
+        
+    </xs:simpleType>
+    
+    
+    <xs:element name="option">
+        <xs:annotation>
+            <xs:documentation>
+                option is the elements used to insert options or choices in an MCQ or a Matching question
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" type="choiceItem" use="required"/>
+        </xs:complexType>
+        
+    </xs:element>
+    <xs:annotation>
+        <xs:documentation>A MCQuestion type with text and atleast 2 options</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="choices" mixed="true">
+        <xs:choice maxOccurs="unbounded" minOccurs="2">
+            <xs:element ref="option"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="tfChoices" mixed="true">
+        <xs:choice maxOccurs="2" minOccurs="2">
+            <xs:element name="option">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="id" type="choiceItem" use="required"/>
+                </xs:complexType>
+                
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    
+    <xs:annotation>
+        <xs:documentation>Full Question Element Type</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="MCQ">
+        <xs:sequence>
+            <xs:element name="ques" type="choices"  />
+            <xs:element name="ans" type="choiceItem" nillable="true" minOccurs="0"/>
+            <xs:group ref="questionGroup"></xs:group>
+        </xs:sequence>
+        <xs:attributeGroup ref="questionAttributes"/>
+    </xs:complexType>
+    
+    <xs:complexType name="TF">
+        <xs:sequence>
+            <xs:element name="ques" type="tfChoices"  />
+            <xs:element name="ans" type="choiceItem" nillable="true"/>
+            <xs:group ref="questionGroup"></xs:group>
+        </xs:sequence>
+        <xs:attributeGroup ref="questionAttributes"/>
+    </xs:complexType>
+    
+    <xs:attributeGroup name="questionAttributes">
+        <xs:annotation>
+            <xs:documentation> Conains the attributes for question element. </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="number" type="xs:positiveInteger" use="required">
+            <xs:annotation>
+                <xs:documentation> Determines the question number. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute name="level">
+            <xs:simpleType>
+                <xs:restriction base="xs:token">
+                    <xs:enumeration value="easy"/>
+                    <xs:enumeration value="medium"/>
+                    <xs:enumeration value="hard"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        
+    </xs:attributeGroup>
+    
+    <xs:element name="score" type="xs:decimal"></xs:element>
+    
+    <xs:annotation>
+        <xs:documentation>
+            Restrictions - value entered in "ans" element must match attribute id of the options
+        </xs:documentation>
+    </xs:annotation>
+    <!-- Restrictions - value entered in <ans> element must match attribute id of the options -->
+    <xs:element name="MCQ" type="MCQ">
+        <xs:annotation>
+            <xs:documentation>Element to insert a multiple choice question.
+            Answer inserted must match an option id to make it a valid answer</xs:documentation>
+        </xs:annotation>
+        <xs:key name="choiceId">
+            <xs:selector xpath="ques/option"></xs:selector>
+            <xs:field xpath="@id"></xs:field>
+        </xs:key>
+        <xs:keyref refer="choiceId" name="answer">
+            <xs:selector xpath="ans"></xs:selector>
+            <xs:field xpath="."></xs:field>
+        </xs:keyref>
+        
+    </xs:element>
+
+<xs:group name="questionGroup">
+    <xs:annotation>
+        <xs:documentation>The group of elements which are common for all the questions</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+    <xs:element name="max-score" minOccurs="1" type="xs:float" default="0"></xs:element>
+    <xs:element name="prof-answer" minOccurs="1" type="xs:string"/>
+    <xs:element name="prof-score" minOccurs="1" type="xs:float" default="0"/>
+    </xs:sequence>
+</xs:group>
+
+<xs:complexType name="descr_ans">
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="para" type="xs:string"></xs:element>
+    </xs:choice>
+</xs:complexType>
+    <xs:complexType name="short_ans">
+        <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:element name="para" type="xs:string"></xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="desc">
+        <xs:sequence>
+            <xs:element name="ques" type="desc_question"/>
+            
+            
+            <xs:element name="ans" minOccurs="1" type="descr_ans"/>
+            
+            <xs:group ref="questionGroup"></xs:group>
+        </xs:sequence>
+        <xs:attributeGroup ref="questionAttributes"/>
+    </xs:complexType>
+
+    
+    <xs:complexType name="desc_question" mixed="true">
+        <xs:group ref="shared" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:complexType>
+    <xs:element name="Desc_question" type="desc">
+        <xs:annotation>
+            <xs:documentation>
+                This is the Descriptive Answer question element.
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+   
+   <xs:complexType name="matching_answers">
+       <xs:choice maxOccurs="unbounded" minOccurs="0">
+           <xs:element ref="item"/>
+       </xs:choice>
+   </xs:complexType>
+    
+    <xs:element name="Match">
+        <xs:annotation>
+            <xs:documentation>The element used for matching questions. items are used for one list while options are used for the other.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ques" type="matching_questions"/>
+            
+                <xs:element name="ans" type="matching-answers"/>
+            
+                <xs:group ref="questionGroup"></xs:group>
+            </xs:sequence>
+            <xs:attributeGroup ref="questionAttributes"/>
+            
+        </xs:complexType>
+        
+      <!--<xs:keyref refer="matching_choices" name="matching_choicesRef">
+            <xs:selector xpath="matcher/item"></xs:selector>
+            <xs:field xpath="."></xs:field>
+        </xs:keyref>-->
+      
+        
+    </xs:element>
+  <xs:complexType name="matching_questions" mixed="true">
+      <xs:complexContent>
+          <xs:extension base="desc_question">
+              <xs:sequence maxOccurs="1">
+              <xs:choice minOccurs="2" maxOccurs="unbounded">
+                  <xs:element ref="item"/>
+                  
+              </xs:choice>
+                  
+                  <xs:choice minOccurs="2" maxOccurs="unbounded">
+                      <xs:element ref="option"/>
+                      
+                  </xs:choice>
+              </xs:sequence>
+          </xs:extension>
+      </xs:complexContent>
+  </xs:complexType>
+    <xs:simpleType name="matching-answers-type">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9][a-z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="matching-answers">
+        <xs:list itemType="matching-answers-type"/>
+    </xs:simpleType>
+</xs:schema>
