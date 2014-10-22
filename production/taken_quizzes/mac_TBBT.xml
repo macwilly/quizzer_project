@@ -9,7 +9,7 @@
                     <para>They are all nerds except for Penny who is beauiful!</para>
                 </ans>
                 <max-score>10</max-score>
-                <prof-answer>Right!</prof-answer>
+                <prof-answer>right</prof-answer>
                 <prof-score>2</prof-score>
             </Desc_question>
             <MCQ number="02">
@@ -18,10 +18,11 @@
                     <option id="b">Spock</option>
                     <option id="c">Zazzy</option>
                     <option id="d">Bazinga</option>
+                    <option id=""></option>
                 </ques>
                 <ans>a</ans>
                 <max-score>1</max-score>
-                <prof-answer>1</prof-answer>
+                <prof-answer>a</prof-answer>
                 <prof-score>1</prof-score>
             </MCQ>
             <Match number="03">
@@ -37,13 +38,14 @@
                 </ques>
                 <ans>1d 2c 3a 4d</ans>
                 <max-score>4</max-score>
-                <prof-answer>Right</prof-answer>
+                <prof-answer>1d 2c 3a 4d</prof-answer>
                 <prof-score>4</prof-score>
             </Match>
             <TF number="04">
                 <ques>Howard Woluwitz is NOT a jew.
                     <option id="a">True</option>
                     <option id="b">False</option>
+                    <option id=""></option>
                 </ques>
                 <ans>b</ans>
                 <max-score>1</max-score>
@@ -56,9 +58,10 @@
                     <option id="b">Leonard Heoffstadder</option>
                     <option id="c">Rajesh Kuthrapalli</option>
                     <option id="d">Howard Woluwitz</option>
+                    <option id=""></option>
                 </ques>
                 <ans>c</ans>
-                <max-score>1</max-score>
+                <max-score>4</max-score>
                 <prof-answer>d</prof-answer>
                 <prof-score>0</prof-score>
             </MCQ>
@@ -67,9 +70,9 @@
                 <ans>
                     <para>His agreement is very detailed and complex</para>
                 </ans>
-                <max-score>5</max-score>
-                <prof-answer>Too brief</prof-answer>
-                <prof-score>2.5</prof-score>
+                <max-score>4</max-score>
+                <prof-answer>Too Brief</prof-answer>
+                <prof-score>2</prof-score>
             </Desc_question>
             <Match number="07">
                 <ques>Match the following:
@@ -91,20 +94,21 @@
                 <ques>Pennny's Character is orignally from Nebraska.
                     <option id="a">True</option>
                     <option id="b">False</option>
+                    <option id=""></option>
                 </ques>
                 <ans>a</ans>
                 <max-score>1</max-score>
-                <prof-answer>a</prof-answer>
+                <prof-answer></prof-answer>
                 <prof-score>1</prof-score>
             </TF>
             <Desc_question number="09">
                 <ques>why the names 'Sheldon' and 'Leonard' used  specifically in the show by chuck lorre and bill prady?</ques>
                 <ans>
-                    <para></para>
+                    <para>I don't know </para>
                 </ans>
-                <max-score></max-score>
+                <max-score>4</max-score>
                 <prof-answer></prof-answer>
-                <prof-score></prof-score>
+                <prof-score>0</prof-score>
             </Desc_question>
             <MCQ number="10">
                 <ques>Bernadette's full name before marrige was
@@ -112,10 +116,12 @@
                     <option id="b">Bernadette Lee Cooper</option>
                     <option id="c">Bernadette Maryann Rostenkowski</option>
                     <option id="d">Bernadette Woluwitz</option>
+                    <option id=""></option>
                 </ques>
-                <ans>c</ans>
-                <prof-answer></prof-answer>
-                <prof-score></prof-score>
+                <ans>a</ans>
+                <max-score>4</max-score>
+                <prof-answer>c</prof-answer>
+                <prof-score>0</prof-score>
             </MCQ>
         </exam>
     </course>
