@@ -9,9 +9,10 @@
                     <option id="b">area</option>
                     <option id="c">baring</option>
                     <option id="d">distance</option>
+                    <option id=""></option>
                 </ques>
-                <ans>b</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -20,9 +21,10 @@
                     
                     <option id="a">zones of climate</option>
                     <option id="b">zones of oceans</option>
+                    <option id=""></option>
                 </ques>
-                <ans>a</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -31,8 +33,8 @@
                 <ans>
                     <para></para>
                 </ans>
-                <max-score></max-score>
-                <prof-answer>larger, more</prof-answer>
+                <max-score>2</max-score>
+                <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </fill_in_the_blank>
             <MCQ number="04">
@@ -42,18 +44,19 @@
                     <option id="b">damage of solar cells of spacecraft</option>
                     <option id="c">adverse effect on living organisms</option>
                     <option id="d">All of the above</option>
+                    <option id=""></option>
                 </ques>
-                <ans>d</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
             <fill_in_the_blank number="05">
                 <ques> The great Victoria Desert is located in</ques>
                 <ans>
-                    <para> Australia</para>
+                    <para></para>
                 </ans>
-                <max-score></max-score>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </fill_in_the_blank>
@@ -61,18 +64,20 @@
                 <ques>The statement "If x is divisible by 8, then it is divisible by 6" is false if x equals
                     <option id="a">32</option>
                     <option id="b">48</option>
+                    <option id=""></option>
                 </ques>
-                <ans>b</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
             <Desc_question number="07">
-                <ques>What is true about the statement "If two angles are right angles, the angles have equal measure" and its converse "If two angles have equal measure then the two angles are right angles"?</ques>
+                <ques>
+                What is true about the statement "If two angles are right angles, the angles have equal measure" and its converse "If two angles have equal measure then the two angles are right angles"?</ques>
                 <ans>
                     <para></para>
                 </ans>
-                <max-score></max-score>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </Desc_question>
@@ -82,9 +87,10 @@
                     <option id="a">If Amanda does not buy green in-line skates, then Tom does not buy a red skateboard.</option>
                     <option id="b">If Tom does not buy a red skateboard, then Amanda does not buy green in-line skates.</option>
                     <option id="c">If Amanda buys green in-line skates, then Tom buys a red skateboard.</option>
+                    <option id=""></option>
                 </ques>
-                <ans>a</ans>
-                <max-score></max-score>
+                <ans></ans>
+                <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
             </MCQ>
@@ -92,8 +98,9 @@
                 <ques>Which statement is logically equivalent to "If Yoda cannot use a lightsaber, then he cannot help Luke win the battle."
                     <option id="a">Yoda cannot use a lightsaber and he will help Luke win the battle.</option>
                     <option id="b">If Yoda can help Luke win the battle, then he can use a lightsaber.</option>
+                    <option id=""></option>
                 </ques>
-                <ans>b</ans>
+                <ans></ans>
                 <max-score></max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -104,7 +111,7 @@
                    <ans>
                        <para></para>
                    </ans>
-                   <max-score></max-score>
+                   <max-score>3</max-score>
                    <prof-answer></prof-answer>
                    <prof-score></prof-score>
                </fill_in_the_blank>    
