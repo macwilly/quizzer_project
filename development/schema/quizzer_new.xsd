@@ -138,7 +138,6 @@
     
     <xs:group name="shared">
         <xs:choice>
-            
             <xs:element ref="list"/>
             <xs:element ref="img"/>
             <xs:element ref="hyperlink"/>
@@ -230,9 +229,9 @@
 
     <xs:element name="hyperlink" type="xs:string"/>
     
-
-
-    <!-- Choice restriction "alphabets only" -->
+    <xs:annotation>
+        <xs:documentation>Choice restriction "alphabets only"</xs:documentation>
+    </xs:annotation>
     <xs:simpleType name="choiceItem">
         <xs:restriction base="xs:string">
             <xs:pattern value="[a-z]|" />
@@ -253,8 +252,9 @@
         </xs:complexType>
         
     </xs:element>
-    
-    <!-- A MCQuestion type with text and atleast 2 options -->
+    <xs:annotation>
+        <xs:documentation>A MCQuestion type with text and atleast 2 options</xs:documentation>
+    </xs:annotation>
     <xs:complexType name="choices" mixed="true">
         <xs:choice maxOccurs="unbounded" minOccurs="2">
             <xs:element ref="option"/>
@@ -271,8 +271,9 @@
         </xs:choice>
     </xs:complexType>
     
-    <!-- Full Question Element Type -->
-    
+    <xs:annotation>
+        <xs:documentation>Full Question Element Type</xs:documentation>
+    </xs:annotation>
     <xs:complexType name="MCQ">
         <xs:sequence>
             <xs:element name="ques" type="choices"  />
@@ -300,13 +301,7 @@
                 <xs:documentation> Determines the question number. </xs:documentation>
             </xs:annotation>
         </xs:attribute>
-        <!--<xs:attribute name="points" default="1.0" type="xs:decimal">
-            <xs:annotation>
-                <xs:documentation> Determines the number of points to be alloted to a question.
-                </xs:documentation>
-            </xs:annotation>
-            -->
-        <!--</xs:attribute>-->
+
         <xs:attribute name="level">
             <xs:simpleType>
                 <xs:restriction base="xs:token">
@@ -321,7 +316,11 @@
     
     <xs:element name="score" type="xs:decimal"></xs:element>
     
-    
+    <xs:annotation>
+        <xs:documentation>
+            Restrictions - value entered in "ans" element must match attribute id of the options
+        </xs:documentation>
+    </xs:annotation>
     <!-- Restrictions - value entered in <ans> element must match attribute id of the options -->
     <xs:element name="MCQ" type="MCQ">
         <xs:annotation>
@@ -369,7 +368,7 @@
             
             
             <xs:element name="ans" minOccurs="1" type="descr_ans"/>
-            <!--<xs:element ref="resources" minOccurs="0"/>-->
+            
             <xs:group ref="questionGroup"></xs:group>
         </xs:sequence>
         <xs:attributeGroup ref="questionAttributes"/>
