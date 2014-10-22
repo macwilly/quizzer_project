@@ -18,7 +18,7 @@
                     <option id="d">12</option>
                     <option id=""></option>
                 </ques>
-                <ans></ans>
+                <ans>c</ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score>0.0</prof-score>
@@ -26,7 +26,7 @@
             <Desc_question number="2">
                 <ques>In what ways does a Time Lord differ from a human? </ques>
                 <ans>
-                    <para>Your answer goes here</para>
+                    <para>A Time Lord has longer life span compared to humans. Time Lords can regenerate 12 times before they actually die. They have two hearts.</para>
                 </ans>
                 <max-score>3</max-score>
                 <prof-answer></prof-answer>
@@ -41,7 +41,7 @@
                     <option id="d">Totally Awesome Random Devise in Space</option>
                     <option id=""></option>
                 </ques>
-                <ans></ans>
+                <ans>a</ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -50,7 +50,7 @@
             <Desc_question number="4">
                 <ques>Who is the Doctors greatest foe? </ques>
                 <ans>
-                    <para>Your answer here. </para>
+                    <para>Daleks </para>
                 </ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
@@ -64,7 +64,7 @@
                     <option id="d">1989</option>
                     <option id=""></option>
                 </ques>
-                <ans></ans>
+                <ans>b</ans>
                 <max-score>2</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -83,7 +83,7 @@
                     <option id="e">../media/weeping_angles.jpg</option>
                 </ques>
                 <ans>
-                    
+                    1b 2e 3d 4c 5a
                 </ans>
                 <max-score>5</max-score>
                 <prof-answer></prof-answer>
@@ -92,7 +92,7 @@
             <Desc_question number="7">
                 <ques>Who does the Doctor normally travel with?</ques>
                 <ans>
-                    <para>Your answer here.</para>
+                    <para>The Doctor travels with a companion. Usually a female companion.</para>
                 </ans>
                 <max-score>2</max-score>
                 <prof-answer></prof-answer>
@@ -106,7 +106,7 @@
                     <option id="d">54</option>
                     <option id=""></option>
                 </ques>
-                <ans/>
+                <ans>c</ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
@@ -114,7 +114,7 @@
             <Desc_question number="9">
                 <ques>Who does Captain Jack Harkness become and how?</ques>
                 <ans>
-                    <para> Your answer here.</para>
+                    <para> Jack becomes the face of Boe. When the bad wolf brings him back from dead, she permanently makes him immortal. </para>
                 </ans>
                 <max-score>3</max-score>
                 <prof-answer></prof-answer>
@@ -130,7 +130,7 @@
                     <option id="e"> All of the above</option>
                     <option id=""></option>
                 </ques>
-                <ans></ans>
+                <ans>e</ans>
                 <max-score>1</max-score>
                 <prof-answer></prof-answer>
                 <prof-score></prof-score>
