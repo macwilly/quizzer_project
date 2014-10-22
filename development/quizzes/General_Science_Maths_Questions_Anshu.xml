@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="file:/C:/Users/priyesh/Documents/GitHub/quizzer_project/development/schema/quizzer_new.xsd">
+    xsi:noNamespaceSchemaLocation="../schema/quizzer_new.xsd">
     <course id="GENE-101-01">
         <exam prof_UID="982735491" stud_UID="835461027" exam_id="Gene">
             <MCQ number="01">

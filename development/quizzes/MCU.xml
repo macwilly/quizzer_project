@@ -3,6 +3,13 @@
     xsi:noNamespaceSchemaLocation="../schema/quizzer_new.xsd">
     <course id="MARV-101-01">
         <exam prof_UID="830006498" stud_UID="542366587" exam_id="MCU">
+            <instr>
+                <list>
+                    <item number="1">Answer the matching questions in the format: 1a 2b 3c</item>
+                    <item number="2">Answer the MCQ with the option alone</item>
+                    <item number="3">Use a para element to answer the descriptive questions and fill in the blank questions.</item>
+                </list>
+            </instr>
             <fill_in_the_blank number="1">
                 <ques>Expand J.A.R.V.I.S</ques>
                 <ans>
