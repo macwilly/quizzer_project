@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Quizzer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schema/quizzer.xsd">
+    <course id="GENE-101-01">
+        <exam prof_UID="982735491" stud_UID="835461027" exam_id="Gene">
+            <MCQ number="01">
+                <ques>The Homolographic projection has the correct representation of
+                    <option id="a">shape</option>
+                    <option id="b">area</option>
+                    <option id="c">baring</option>
+                    <option id="d">distance</option>
+                </ques>
+                <ans>b</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <MCQ number="02">
+                <ques>The latitudinal differences in pressure delineate a number of major pressure zones, which correspond with
+                    
+                    <option id="a">zones of climate</option>
+                    <option id="b">zones of oceans</option>
+                </ques>
+                <ans>a</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <fill_in_the_blank number="03">
+                <ques>The higher the wind speed and the longer the fetch or distance of open water across which the wind blows and waves travel, the ____ waves and the ____ energy they process.</ques>
+                <ans>
+                    <para></para>
+                </ans>
+                <max-score></max-score>
+                <prof-answer>larger, more</prof-answer>
+                <prof-score></prof-score>
+            </fill_in_the_blank>
+            <MCQ number="04">
+                
+                <ques>The hazards of radiation belts include
+                    <option id="a">deterioration of electronic circuits</option>
+                    <option id="b">damage of solar cells of spacecraft</option>
+                    <option id="c">adverse effect on living organisms</option>
+                    <option id="d">All of the above</option>
+                </ques>
+                <ans>d</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <fill_in_the_blank number="05">
+                <ques> The great Victoria Desert is located in</ques>
+                <ans>
+                    <para> Australia</para>
+                </ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </fill_in_the_blank>
+            <MCQ number="06">
+                <ques>The statement "If x is divisible by 8, then it is divisible by 6" is false if x equals
+                    <option id="a">32</option>
+                    <option id="b">48</option>
+                </ques>
+                <ans>b</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <Desc_question number="07">
+                <ques>What is true about the statement "If two angles are right angles, the angles have equal measure" and its converse "If two angles have equal measure then the two angles are right angles"?</ques>
+                <ans>
+                    <para></para>
+                </ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </Desc_question>
+            
+            <MCQ number="08">
+                <ques>If Tom buys a red skateboard, then Amanda buys green in-line skates." Which statement below is logically equivalent
+                    <option id="a">If Amanda does not buy green in-line skates, then Tom does not buy a red skateboard.</option>
+                    <option id="b">If Tom does not buy a red skateboard, then Amanda does not buy green in-line skates.</option>
+                    <option id="c">If Amanda buys green in-line skates, then Tom buys a red skateboard.</option>
+                </ques>
+                <ans>a</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+            <MCQ number="09">
+                <ques>Which statement is logically equivalent to "If Yoda cannot use a lightsaber, then he cannot help Luke win the battle."
+                    <option id="a">Yoda cannot use a lightsaber and he will help Luke win the battle.</option>
+                    <option id="b">If Yoda can help Luke win the battle, then he can use a lightsaber.</option>
+                </ques>
+                <ans>b</ans>
+                <max-score></max-score>
+                <prof-answer></prof-answer>
+                <prof-score></prof-score>
+            </MCQ>
+               <fill_in_the_blank number="10">
+                   <ques>The statement "x greater than 5 or x less than 3" is true if x equals *-*+
+                       </ques>
+                   <ans>
+                       <para></para>
+                   </ans>
+                   <max-score></max-score>
+                   <prof-answer></prof-answer>
+                   <prof-score></prof-score>
+               </fill_in_the_blank>    
+        </exam>
+    </course>
+</Quizzer>
